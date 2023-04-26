@@ -13,6 +13,7 @@ int _printf(const char *format, ...)
 	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
 	char buffer[BUFF_SIZE];
+
 	if (format == NULL)
 		return (-1);
 
@@ -56,7 +57,6 @@ int _printf(const char *format, ...)
  * @buffer: Array of chars
  * @buff_ind: Index at which to add next char, represents the length.
  */
-
 void print_buffer(char buffer[], int *buff_ind)
 {
 	if (*buff_ind > 0)
